@@ -97,4 +97,11 @@ public class IO {
     public static void printLineSep() {
         System.out.println("_________________________________________");
     }
+
+    public static void printLineSep(int i) {
+        for (int j = 0; j < i; j++) {
+            System.out.printf("%s", "_");
+        }
+        System.out.println();
+    }
 }
