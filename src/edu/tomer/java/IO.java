@@ -93,4 +93,8 @@ public class IO {
     static int getInt(String prompt, int from){
         return getInt(prompt, from, Integer.MAX_VALUE);
     }
+
+    public static void printLineSep() {
+        System.out.println("_________________________________________");
+    }
 }
