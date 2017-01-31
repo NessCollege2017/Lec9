@@ -21,4 +21,17 @@ public class Matrices {
         }
         return result;
     }
+
+    public static int[][] transpose(int[][] arr){
+        for (int i = 0, j = arr.length - 1; i < arr.length; i++, j--) {
+            //arr[i][i] = arr[i][j];
+            //temp = x
+            int temp = arr[i][i];
+            //x = y
+            arr[i][i] = arr[i][j];
+            //y = temp
+            arr[i][j] = temp;
+        }
+        return arr;
+    }
 }

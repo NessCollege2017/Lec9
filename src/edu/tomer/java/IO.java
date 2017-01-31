@@ -20,6 +20,26 @@ public class IO {
         }
     }
 
+
+    static void printPretty(int[][] arr){
+        System.out.printf("%4s", "");
+
+        for (int i = 0; i < arr[0].length; i++) {
+            System.out.printf("%4d", i);
+        }
+        System.out.println();
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.printf("%3d|", i);
+            //print the columns
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.printf("%4d", arr[i][j]);
+            }
+            System.out.println();
+        }
+    }
+
+
     static void print(String[] arr){
         for (int i = 0; i < arr.length; i++) {
             System.out.printf("%4s", arr[i]);
@@ -94,13 +114,10 @@ public class IO {
         return getInt(prompt, from, Integer.MAX_VALUE);
     }
 
-    public static void printLineSep() {
-        System.out.println("_________________________________________");
-    }
 
     public static void printLineSep(int i) {
         for (int j = 0; j < i; j++) {
-            System.out.printf("%s", "_");
+            System.out.print("_");
         }
         System.out.println();
     }

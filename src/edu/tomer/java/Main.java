@@ -6,6 +6,16 @@ public class Main {
 
     public static void main(String[] args) {
         int[][] arr = IO.getIntArraydbl();
+        IO.printPretty(arr);
+    }
+
+
+
+
+
+
+    public static void firstQuestion(){
+        int[][] arr = IO.getIntArraydbl();
         IO.print(arr);
         IO.printLineSep(15);
 
@@ -15,8 +25,5 @@ public class Main {
         IO.printLineSep(15);
         int[] secondDiagonal = Matrices.secondDiagonal(arr);
         IO.print(secondDiagonal);
-
     }
-
-
 }
